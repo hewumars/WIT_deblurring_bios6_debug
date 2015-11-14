@@ -6,10 +6,11 @@
 
 #include <xdc/runtime/Error.h>
 #include <xdc/runtime/System.h>
-
+#include <xdc/runtime/Memory.h>
 #include <ti/sysbios/BIOS.h>
-
+#include <ti/sysbios/knl/Semaphore.h>
 #include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Queue.h>
 
 /*
  *  ======== taskFxn ========
