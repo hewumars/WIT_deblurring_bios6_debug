@@ -1,0 +1,977 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.4.12                     
+******************************************************************************
+>> Linked Thu Nov 12 22:19:43 2015
+
+OUTPUT FILE NAME:   <deblurring_WIT.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0080ef20
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  VECTORS_RAM           00800000   00000400  00000000  00000400  RWIX
+  L2SRAM                00800400   000ffc00  00025104  000daafc  RWIX
+  MSMCSRAM              0c000000   00100000  000400f0  000bff10  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00800400    00800400    0000f2c0   0000f2c0    r-x
+  00800400    00800400    0000f2c0   0000f2c0    r-x .text
+0080f6c0    0080f6c0    00008d48   00000000    rw-
+  0080f6c0    0080f6c0    00008000   00000000    rw- .stack
+  008176c0    008176c0    00000d48   00000000    rw- .far
+00818408    00818408    000003d8   000003d8    rw-
+  00818408    00818408    000003d8   000003d8    rw- .fardata
+008187e0    008187e0    00000360   00000360    r--
+  008187e0    008187e0    00000360   00000360    r-- .const
+00818b40    00818b40    00000084   00000084    rw-
+  00818b40    00818b40    00000084   00000084    rw- .neardata
+00818c00    00818c00    00000354   00000354    r-x
+  00818c00    00818c00    00000200   00000200    r-x .csl_vect
+  00818e00    00818e00    00000154   00000154    r-- .switch
+00818f58    00818f58    00000220   00000000    rw-
+  00818f58    00818f58    00000120   00000000    rw- .cio
+  00819078    00819078    00000100   00000000    rw- .testMem
+00819178    00819178    0000c208   000000d8    rw-
+  00819178    00819178    000000d8   000000d8    rw- .bss
+  00819250    00819250    00007800   00000000    rw- .sysmem
+  00820a50    00820a50    00004930   00000000    rw- C1PL
+00825380    00825380    000001c4   000001c4    r--
+  00825380    00825380    000001c4   000001c4    r-- .cinit
+0c000000    0c000000    000400f0   00000000    rw-
+  0c000000    0c000000    000400f0   00000000    rw- .L2_buffers
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00800400    0000f2c0     
+                  00800400    00002140     upp_common.obj (.text)
+                  00802540    000020a0     Init.obj (.text)
+                  008045e0    00000f20     KeyStone_common.obj (.text)
+                  00805500    00000ac0     Implement_WIT.obj (.text)
+                  00805fc0    00000820     Intc_ISR.obj (.text)
+                  008067e0    000005c0     rts6600_elf.lib : divd.obj (.text:__c6xabi_divd)
+                  00806da0    000005c0                     : _printfi.obj (.text:_getarg_diouxp)
+                  00807360    000005a0     ti.csl.ae66 : csl_edma3HwChannelControl.oe66 (.text:csl_section:edma3:CSL_edma3HwChannelControl)
+                  00807900    00000520     rts6600_elf.lib : _printfi.obj (.text:_setfield)
+                  00807e20    000004e0     ti.csl.ae66 : csl_edma3HwControl.oe66 (.text:csl_section:edma3:CSL_edma3HwControl)
+                  00808300    00000460     rts6600_elf.lib : _printfi.obj (.text:_printfi)
+                  00808760    000003c0     ti.csl.intc.ae66 : csl_intcHwControl.oe66 (.text:csl_section:intc:CSL_intcHwControl)
+                  00808b20    000003a0     rts6600_elf.lib : fputs.obj (.text:fputs)
+                  00808ec0    00000360     IPC.obj (.text)
+                  00809220    00000320     rts6600_elf.lib : _printfi.obj (.text:_pproc_fge)
+                  00809540    000002e0                     : _printfi.obj (.text:_pproc_fwp)
+                  00809820    000002e0     ti.csl.ae66 : csl_edma3GetHwStatus.oe66 (.text:csl_section:edma3:CSL_edma3GetHwStatus)
+                  00809b00    000002a0     rts6600_elf.lib : _printfi.obj (.text:fcvt)
+                  00809da0    00000280                     : _printfi.obj (.text:ecvt)
+                  0080a020    00000280                     : memory.obj (.text:free)
+                  0080a2a0    00000240                     : imath64.obj (.text:__c6xabi_divull)
+                  0080a4e0    00000240                     : _printfi.obj (.text:_pconv_e)
+                  0080a720    00000240                     : _printfi.obj (.text:_pproc_diouxp)
+                  0080a960    00000220                     : _printfi.obj (.text:_pproc_str)
+                  0080ab80    00000220     ti.csl.intc.ae66 : csl_intcOpen.oe66 (.text:csl_section:intc:CSL_intcOpen)
+                  0080ada0    00000220                      : _csl_intcCombEventDispatcher.oe66 (.text:csl_section:intc:_CSL_intcEvent0Dispatcher)
+                  0080afc0    00000220                      : _csl_intcCombEventDispatcher.oe66 (.text:csl_section:intc:_CSL_intcEvent1Dispatcher)
+                  0080b1e0    00000220                      : _csl_intcCombEventDispatcher.oe66 (.text:csl_section:intc:_CSL_intcEvent2Dispatcher)
+                  0080b400    00000220                      : _csl_intcCombEventDispatcher.oe66 (.text:csl_section:intc:_CSL_intcEvent3Dispatcher)
+                  0080b620    00000220     rts6600_elf.lib : fputc.obj (.text:fputc)
+                  0080b840    00000200                     : _printfi.obj (.text:_pconv_g)
+                  0080ba40    00000200                     : setvbuf.obj (.text:setvbuf)
+                  0080bc40    000001e0     ti.csl.intc.ae66 : _csl_intcDispatcher.oe66 (.text:csl_section:intc:_CSL_intcDispatcher)
+                  0080be20    000001c0     rts6600_elf.lib : _printfi.obj (.text:_mcpy)
+                  0080bfe0    000001a0                     : trgdrv.obj (.text:HOSTrename)
+                  0080c180    000001a0                     : imath40.obj (.text:__c6xabi_divul)
+                  0080c320    00000180                     : copy_decompress_rle.obj (.text:__TI_decompress_rle_core)
+                  0080c4a0    00000180     edmaIntDispatcher.obj (.text)
+                  0080c620    00000180     rts6600_elf.lib : memory.obj (.text:malloc)
+                  0080c7a0    00000140     ti.csl.ae66 : csl_chip.oe66 (.text:CSL_chipReadReg)
+                  0080c8e0    00000140     rts6600_elf.lib : _printfi.obj (.text:_pproc_fflags)
+                  0080ca20    00000140     ti.csl.intc.ae66 : csl_intcInit.oe66 (.text:csl_section:intc:CSL_intcInit)
+                  0080cb60    00000140                      : _csl_intcIntrEnDisRes.oe66 (.text:csl_section:intc)
+                  0080cca0    00000140     rts6600_elf.lib : lowlev.obj (.text:getdevice)
+                  0080cde0    00000120                     : fclose.obj (.text:_closefile)
+                  0080cf00    00000120                     : _printfi.obj (.text:_ltostr)
+                  0080d020    00000120     ti.csl.ae66 : csl_edma3ChannelOpen.oe66 (.text:csl_section:edma3:CSL_edma3ChannelOpen)
+                  0080d140    00000120     rts6600_elf.lib : fseek.obj (.text:fseek)
+                  0080d260    00000100                     : trgdrv.obj (.text:HOSTlseek)
+                  0080d360    00000100                     : autoinit.obj (.text:_auto_init_elf)
+                  0080d460    00000100                     : _io_perm.obj (.text:_wrt_ok)
+                  0080d560    00000100                     : cpy_tbl.obj (.text:copy_in)
+                  0080d660    000000e0                     : trgdrv.obj (.text:HOSTopen)
+                  0080d740    000000e0                     : trgdrv.obj (.text:HOSTread)
+                  0080d820    000000e0                     : divi.obj (.text:__divi)
+                  0080d900    000000e0                     : _printfi.obj (.text:_div)
+                  0080d9e0    000000e0                     : atoi.obj (.text:atoi)
+                  0080dac0    000000e0                     : lowlev.obj (.text:close)
+                  0080dba0    000000e0                     : copy_zero_init.obj (.text:decompress:ZI:__TI_zero_init)
+                  0080dc80    000000e0                     : ltoa.obj (.text:ltoa)
+                  0080dd60    000000e0                     : memset.obj (.text:memset)
+                  0080de40    000000e0                     : printf.obj (.text:printf)
+                  0080df20    000000c0                     : trgdrv.obj (.text:HOSTunlink)
+                  0080dfe0    000000c0                     : trgdrv.obj (.text:HOSTwrite)
+                  0080e0a0    000000c0                     : divu.obj (.text:__divu)
+                  0080e160    000000c0                     : fflush.obj (.text:_doflush)
+                  0080e220    000000c0     ti.csl.ae66 : csl_edma3HwChannelSetup.oe66 (.text:csl_section:edma3:CSL_edma3HwChannelSetupQue)
+                  0080e2e0    000000c0                 : csl_edma3Open.oe66 (.text:csl_section:edma3:CSL_edma3Open)
+                  0080e3a0    000000c0     ti.csl.intc.ae66 : csl_intcPlugEventHandler.oe66 (.text:csl_section:intc:CSL_intcPlugEventHandler)
+                  0080e460    000000c0     rts6600_elf.lib : exit.obj (.text:exit)
+                  0080e520    000000c0                     : tls.obj (.text:tls:init:__TI_tls_init)
+                  0080e5e0    000000a0                     : trgdrv.obj (.text:HOSTclose)
+                  0080e680    000000a0                     : fopen.obj (.text:_cleanup)
+                  0080e720    000000a0                     : _printfi.obj (.text:_ecpy)
+                  0080e7c0    000000a0                     : _printfi.obj (.text:_fcpy)
+                  0080e860    000000a0                     : memory.obj (.text:_minit)
+                  0080e900    000000a0                     : _printfi.obj (.text:_pconv_f)
+                  0080e9a0    000000a0     ti.csl.ae66 : csl_edma3HwChannelSetup.oe66 (.text:csl_section:edma3:CSL_edma3HwChannelSetupParam)
+                  0080ea40    000000a0                 : csl_edma3Param.oe66 (.text:csl_section:edma3:CSL_edma3ParamSetup)
+                  0080eae0    000000a0     rts6600_elf.lib : lowlev.obj (.text:finddevice)
+                  0080eb80    000000a0                     : lowlev.obj (.text:lseek)
+                  0080ec20    000000a0                     : memcpy64.obj (.text:memcpy)
+                  0080ecc0    000000a0                     : memory.obj (.text:minsert)
+                  0080ed60    000000a0                     : memory.obj (.text:mremove)
+                  0080ee00    000000a0                     : lowlev.obj (.text:write)
+                  0080eea0    00000080                     : llshift.obj (.text:__c6xabi_llshl)
+                  0080ef20    00000080                     : boot.obj (.text:_c_int00)
+                  0080efa0    00000080     ti.csl.ae66 : csl_edma3Param.oe66 (.text:csl_section:edma3:CSL_edma3GetParamHandle)
+                  0080f020    00000080     rts6600_elf.lib : trgmsg.obj (.text:readmsg)
+                  0080f0a0    00000080                     : lowlev.obj (.text:unlink)
+                  0080f120    00000060                     : cpp_init.obj (.text:__TI_cpp_init)
+                  0080f180    00000060                     : frcmpyd_div.obj (.text:__c6xabi_frcmpyd_div)
+                  0080f1e0    00000060                     : llshift.obj (.text:__c6xabi_llshru)
+                  0080f240    00000060                     : imath64.obj (.text:_subcull)
+                  0080f2a0    00000060     ti.csl.ae66 : csl_edma3GetBaseAddress.oe66 (.text:csl_section:edma:CSL_edma3ccGetModuleBaseAddr)
+                  0080f300    00000060     main.obj (.text)
+                  0080f360    00000060     rts6600_elf.lib : memccpy.obj (.text:memccpy)
+                  0080f3c0    00000060                     : trgmsg.obj (.text:writemsg)
+                  0080f420    00000040     ti.csl.ae66 : csl_cpIntcGetBaseAddress.oe66 (.text:CSL_CPINTC_open)
+                  0080f460    00000040     rts6600_elf.lib : isinf.obj (.text:__c6xabi_isinf)
+                  0080f4a0    00000040                     : _printfi.obj (.text:__c6xabi_isnan)
+                  0080f4e0    00000040                     : strasg.obj (.text:__strasgi_64plus)
+                  0080f520    00000040                     : args_main.obj (.text:_args_main)
+                  0080f560    00000020     ti.csl.ae66 : csl_gpioGetBaseAddress.oe66 (.text:CSL_GPIO_open)
+                  0080f580    00000020     rts6600_elf.lib : negll.obj (.text:__c6xabi_negll)
+                  0080f5a0    00000020                     : _lock.obj (.text:_nop)
+                  0080f5c0    00000020                     : printf.obj (.text:_outc)
+                  0080f5e0    00000020                     : printf.obj (.text:_outs)
+                  0080f600    00000020                     : exit.obj (.text:abort)
+                  0080f620    00000020     ti.csl.ae66 : csl_edma3Init.oe66 (.text:csl_section:edma3:CSL_edma3Init)
+                  0080f640    00000020     ti.csl.intc.ae66 : csl_intcHookIsr.oe66 (.text:csl_section:intc:CSL_intcHookIsr)
+                  0080f660    00000020                      : _csl_intcNmiDummy.oe66 (.text:csl_section:intc)
+                  0080f680    00000020     rts6600_elf.lib : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
+                  0080f6a0    00000020                     : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
+
+.stack     0    0080f6c0    00008000     UNINITIALIZED
+                  0080f6c0    00000008     rts6600_elf.lib : boot.obj (.stack)
+                  0080f6c8    00007ff8     --HOLE--
+
+.far       0    008176c0    00000d48     UNINITIALIZED
+                  008176c0    00000794     main.obj (.far)
+                  00817e54    00000004     --HOLE--
+                  00817e58    00000468     Init.obj (.far)
+                  008182c0    00000140     rts6600_elf.lib : defs.obj (.far)
+                  00818400    00000008                     : trgdrv.obj (.far)
+
+.fardata   0    00818408    000003d8     
+                  00818408    000001e0     rts6600_elf.lib : defs.obj (.fardata:_ftable)
+                  008185e8    000000a0                     : lowlev.obj (.fardata:_stream)
+                  00818688    00000078                     : lowlev.obj (.fardata:_device)
+                  00818700    0000006c     upp_common.obj (.fardata)
+                  0081876c    00000004     rts6600_elf.lib : defs.obj (.fardata)
+                  00818770    00000020     Init.obj (.fardata:intInfo)
+                  00818790    00000010     IPC.obj (.fardata:iIPCARInfo)
+                  008187a0    00000010     IPC.obj (.fardata:iIPCGRInfo)
+                  008187b0    00000010     KeyStone_common.obj (.fardata:mem_prot_key)
+                  008187c0    0000000c     rts6600_elf.lib : exit.obj (.fardata)
+                  008187cc    0000000c                     : memory.obj (.fardata)
+                  008187d8    00000008                     : _lock.obj (.fardata)
+
+.const     0    008187e0    00000360     
+                  008187e0    00000118     Init.obj (.const:.string)
+                  008188f8    00000101     rts6600_elf.lib : ctype.obj (.const:.string:_ctypes_)
+                  008189f9    00000003     --HOLE-- [fill = 0]
+                  008189fc    00000064     IPC.obj (.const:.string)
+                  00818a60    00000058     KeyStone_common.obj (.const:.string)
+                  00818ab8    00000024     Implement_WIT.obj (.const:.string)
+                  00818adc    00000023     rts6600_elf.lib : _printfi.obj (.const:.string)
+                  00818aff    00000001     --HOLE-- [fill = 0]
+                  00818b00    00000020     upp_common.obj (.const:$P$T1$2)
+                  00818b20    00000010     upp_common.obj (.const:$P$T0$1)
+                  00818b30    00000010     main.obj (.const:.string)
+
+.neardata 
+*          0    00818b40    00000084     
+                  00818b40    00000050     KeyStone_common.obj (.neardata)
+                  00818b90    00000010     main.obj (.neardata)
+                  00818ba0    0000000e     Implement_WIT.obj (.neardata)
+                  00818bae    00000002     --HOLE--
+                  00818bb0    0000000c     IPC.obj (.neardata)
+                  00818bbc    00000008     Init.obj (.neardata)
+
+.csl_vect 
+*          0    00818c00    00000200     
+                  00818c00    00000200     ti.csl.intc.ae66 : _csl_intcIsrDispatch.oe66 (.csl_vect)
+
+.switch    0    00818e00    00000154     
+                  00818e00    00000070     ti.csl.ae66 : csl_chip.oe66 (.switch:CSL_chipReadReg)
+                  00818e70    00000048     upp_common.obj (.switch:upp_config)
+                  00818eb8    0000003c     ti.csl.ae66 : csl_edma3HwControl.oe66 (.switch:CSL_edma3HwControl)
+                  00818ef4    00000020                 : csl_edma3GetHwStatus.oe66 (.switch:CSL_edma3GetHwStatus)
+                  00818f14    0000001c     ti.csl.intc.ae66 : csl_intcHwControl.oe66 (.switch:CSL_intcHwControl)
+                  00818f30    00000014     ti.csl.ae66 : csl_edma3HwChannelControl.oe66 (.switch:CSL_edma3HwChannelControl)
+                  00818f44    00000010     ti.csl.intc.ae66 : csl_intcOpen.oe66 (.switch:CSL_intcOpen)
+
+.cio       0    00818f58    00000120     UNINITIALIZED
+                  00818f58    00000120     rts6600_elf.lib : trgmsg.obj (.cio)
+
+.testMem   0    00819078    00000100     UNINITIALIZED
+                  00819078    00000100     edmaIntDispatcher.obj (.testMem)
+
+.bss       0    00819178    000000d8     
+                  00819178    00000068     Init.obj (.bss) [fill = 0]
+                  008191e0    0000004c     ti.csl.intc.ae66 : _csl_intcResource.oe66 (.bss:csl_section:intc:uninit) [fill = 0]
+                  0081922c    00000018     main.obj (.bss) [fill = 0]
+                  00819244    00000008     ti.csl.intc.ae66 : _csl_intcResource.oe66 (.bss:csl_section:intc:init)
+                  0081924c    00000004     IPC.obj (.bss) [fill = 0]
+
+.sysmem    0    00819250    00007800     UNINITIALIZED
+                  00819250    00000008     rts6600_elf.lib : memory.obj (.sysmem)
+                  00819258    000077f8     --HOLE--
+
+C1PL       0    00820a50    00004930     UNINITIALIZED
+                  00820a50    00004930     main.obj (C1PL)
+
+.cinit     0    00825380    000001c4     
+                  00825380    000000e6     (.cinit..fardata.load) [load image, compression = rle]
+                  00825466    00000002     --HOLE-- [fill = 0]
+                  00825468    00000069     (.cinit..neardata.load) [load image, compression = rle]
+                  008254d1    00000003     --HOLE-- [fill = 0]
+                  008254d4    0000000c     (__TI_handler_table)
+                  008254e0    00000009     (.cinit..bss.load) [load image, compression = rle]
+                  008254e9    00000003     --HOLE-- [fill = 0]
+                  008254ec    00000008     (.cinit..L2_buffers.load) [load image, compression = zero_init]
+                  008254f4    00000008     (.cinit..far.load) [load image, compression = zero_init]
+                  008254fc    00000008     (.cinit..testMem.load) [load image, compression = zero_init]
+                  00825504    00000008     (.cinit.C1PL.load) [load image, compression = zero_init]
+                  0082550c    00000038     (__TI_cinit_table)
+
+.L2_buffers 
+*          0    0c000000    000400f0     UNINITIALIZED
+                  0c000000    000400f0     Implement_WIT.obj (.L2_buffers)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0082550c records: 7, size/record: 8, table size: 56
+	.fardata: load addr=00825380, load size=000000e6 bytes, run addr=00818408, run size=000003d8 bytes, compression=rle
+	.neardata: load addr=00825468, load size=00000069 bytes, run addr=00818b40, run size=00000084 bytes, compression=rle
+	.bss: load addr=008254e0, load size=00000009 bytes, run addr=00819178, run size=000000d8 bytes, compression=rle
+	.L2_buffers: load addr=008254ec, load size=00000008 bytes, run addr=0c000000, run size=000400f0 bytes, compression=zero_init
+	.far: load addr=008254f4, load size=00000008 bytes, run addr=008176c0, run size=00000d48 bytes, compression=zero_init
+	.testMem: load addr=008254fc, load size=00000008 bytes, run addr=00819078, run size=00000100 bytes, compression=zero_init
+	C1PL: load addr=00825504, load size=00000008 bytes, run addr=00820a50, run size=00004930 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 008254d4 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+0080f600   C$$EXIT
+0080f418   C$$IO$$
+00818b44   CGEM_regs
+0080f420   CSL_CPINTC_open
+0080f560   CSL_GPIO_open
+0080c7a0   CSL_chipReadReg
+0080d020   CSL_edma3ChannelOpen
+00809820   CSL_edma3GetHwStatus
+0080efa0   CSL_edma3GetParamHandle
+00807360   CSL_edma3HwChannelControl
+0080e9a0   CSL_edma3HwChannelSetupParam
+0080e220   CSL_edma3HwChannelSetupQue
+00807e20   CSL_edma3HwControl
+0080f620   CSL_edma3Init
+0080e2e0   CSL_edma3Open
+0080ea40   CSL_edma3ParamSetup
+0080f2a0   CSL_edma3ccGetModuleBaseAddr
+0080cc18   CSL_intcGlobalDisable
+0080cbf8   CSL_intcGlobalEnable
+0080cc8c   CSL_intcGlobalExcepClear
+0080cc64   CSL_intcGlobalExcepEnable
+0080cc78   CSL_intcGlobalExtExcepEnable
+0080cc50   CSL_intcGlobalNmiEnable
+0080cc38   CSL_intcGlobalRestore
+0080f640   CSL_intcHookIsr
+00808760   CSL_intcHwControl
+0080ca20   CSL_intcInit
+0080cbb0   CSL_intcInterruptClear
+0080cb90   CSL_intcInterruptDisable
+0080cb70   CSL_intcInterruptEnable
+0080cbcc   CSL_intcInterruptRestore
+0080cbc0   CSL_intcInterruptSet
+0080ab80   CSL_intcOpen
+0080e3a0   CSL_intcPlugEventHandler
+0080cbe4   CSL_intcQueryInterruptStatus
+0081813c   ChObjImgRec
+008181ac   ChObjMcbspRx
+00818190   ChObjMcbspTx
+00818174   ChObjUartRec
+00818158   ChObjUartTrans
+0081923c   CheckSum
+0081923d   CheckSum1
+008063d8   DDR3EdmaReadCompleted_INT
+008041e0   DDR3Init
+00824c98   DDR3_DATA1
+00803c24   EDMAInit
+0080c5e8   EdmaEventHook
+00817ef0   EventHandler_uPP
+00818020   EventRecord_IPC
+00818010   EventRecord_uPP
+0080e5e0   HOSTclose
+0080d260   HOSTlseek
+0080d660   HOSTopen
+0080d740   HOSTread
+0080bfe0   HOSTrename
+0080df20   HOSTunlink
+0080dfe0   HOSTwrite
+008067b0   HandleGPIO4RecUppc_INT
+00806794   HandleGPIO5RecGyro_INT
+008063f8   HandleGPIO7RecImg_INT
+00817870   IPCAR1_value_b
+00817b90   IPCAR1_value_f
+008176e0   IPCGR1_value_b
+00817a00   IPCGR1_value_f
+00809068   IPC_ISR
+00805fc0   ImgEDMARecCompleted_INT
+00803794   IntcInit
+00817d88   InterruptCore
+00808fc0   IssueIPCInterrupt
+00809184   IssueInterruptToNextCore
+00804b2c   KeyStone_DDR_PLL_init
+00804f30   KeyStone_L1_cfg
+00805028   KeyStone_L2_cfg
+00804c80   KeyStone_PA_PLL_init
+00804e70   KeyStone_XM_cfg
+00804820   KeyStone_main_PLL_init
+008054a0   Keystone_disable_PSC_Power_Domain
+00805448   Keystone_disable_PSC_module
+008053d8   Keystone_enable_PSC_module
+00824fb8   L2_memory
+00818ba0   RecFlag
+00817d20   ReceiveCore
+00818ba2   SendFlag
+00818bb4   Set
+00817df0   SetCore
+00819078   TccHandlerTable
+00824ad0   UART_DATA_IN_BYTE
+00825360   UART_DONE1_DATA
+008252d8   UART_DONE_DATA
+00824a50   UART_SRC
+00824af0   UART_UP_DATA
+00824b80   UART_UP_DATA_IN_BYTE
+00824bd0   UART_UP_DATA_IN_BYTE1
+00824bf8   UART_UP_DATA_IN_BYTE2
+00824c20   UART_UP_DATA_IN_BYTE3
+00824c48   UART_UP_DATA_IN_BYTE4
+00824c70   UART_UP_DATA_IN_BYTE5
+00824ba8   UART_UP_DATA_IN_BYTE_1
+00818b94   UPUARTCompleted
+00806004   UartEDMARecGyroCompleted_INT
+00806214   UartEDMARecUppcData_INT
+00805fe4   UartEDMASendUppcCompleted_INT
+00818b40   XMC_regs
+00819244   _CSL_intcAllocMask
+008191e0   _CSL_intcCpuIntrTable
+0080bc40   _CSL_intcDispatcher
+0080ada0   _CSL_intcEvent0Dispatcher
+0080afc0   _CSL_intcEvent1Dispatcher
+0080b1e0   _CSL_intcEvent2Dispatcher
+0080b400   _CSL_intcEvent3Dispatcher
+00819228   _CSL_intcEventHandlerRecord
+00819248   _CSL_intcEventOffsetMap
+0080cb60   _CSL_intcIvpSet
+0080f660   _CSL_intcNmiDummy
+00819224   _CSL_intcNumEvents
+00818c00   _CSL_intcVectorTable
+00818f58   __CIOBUF_
+0082550c   __TI_CINIT_Base
+00825544   __TI_CINIT_Limit
+008254d4   __TI_Handler_Table_Base
+008254e0   __TI_Handler_Table_Limit
+UNDEFED    __TI_INITARRAY_Base
+UNDEFED    __TI_INITARRAY_Limit
+008176c0   __TI_STACK_END
+00008000   __TI_STACK_SIZE
+00818b40   __TI_STATIC_BASE
+00007800   __TI_SYSMEM_SIZE
+UNDEFED    __TI_TLS_INIT_Base
+UNDEFED    __TI_TLS_INIT_Limit
+00000001   __TI_args_main
+0080f120   __TI_cpp_init
+0080f680   __TI_decompress_none
+0080f6a0   __TI_decompress_rle24
+008187c8   __TI_enable_exit_profile_output
+ffffffff   __TI_pprof_out_hndl
+ffffffff   __TI_prof_data_size
+ffffffff   __TI_prof_data_start
+0080e520   __TI_tls_init
+0080dba0   __TI_zero_init
+ffffffff   __binit__
+008067e0   __c6xabi_divd
+0080d820   __c6xabi_divi
+0080e0a0   __c6xabi_divu
+0080c180   __c6xabi_divul
+0080a2a0   __c6xabi_divull
+0080f180   __c6xabi_frcmpyd_div
+0080f460   __c6xabi_isinf
+0080eea0   __c6xabi_llshl
+0080f1e0   __c6xabi_llshru
+0080f580   __c6xabi_negll
+0080f4e0   __c6xabi_strasgi_64plus
+ffffffff   __c_args__
+0080d820   __divi
+0080e0a0   __divu
+0080f4e0   __strasgi_64plus
+0080f520   _args_main
+0080d360   _auto_init_elf
+0080ef20   _c_int00
+0080e680   _cleanup
+008187c0   _cleanup_ptr
+0080cde0   _closefile
+008188f8   _ctypes_
+0080e160   _doflush
+008187c4   _dtors_ptr
+0081876c   _ft_end
+00818408   _ftable
+008187d8   _lock
+0080e860   _minit
+0080f5a0   _nop
+00808300   _printfi
+0080f6c0   _stack
+0080f240   _subcull
+00819250   _sys_memory
+008182c0   _tmpnams
+008187dc   _unlock
+0080d460   _wrt_ok
+0080f600   abort
+00818b98   algrithmCompleted
+0080d9e0   atoi
+008176c8   azimuth
+00819238   azimuth_angle
+ffffffff   binit
+00818b48   boot_cfg_regs
+0c0400d0   bottom
+008181e4   chobjDDR3Read
+00818200   chobjUPP
+008181c8   chobjUartSend
+0080dac0   close
+0080d560   copy_in
+00819240   coreNum
+008182b8   coreVector
+00818b9c   count
+00818b4c   cpIntc0Regs
+00818b50   cpIntc1Regs
+008176d4   dbglorudep_v
+00805b40   deblurring_WIT_process
+00818028   edmaObj_uPP
+00805204   edma_Init
+0080c4a0   eventEdmaHandler
+0080e460   exit
+00818baa   first_flag
+0080b620   fputc
+00808b20   fputs
+0080a020   free
+0080d140   fseek
+00818b68   gEDMACC2Regs
+00818220   glbCpintcHnd
+00818000   gpioHandler
+008040a8   gpioInit
+00804160   gpioSetDataBusDirection
+00804124   gpioSetDirection
+00818b99   gycount
+008191b4   hChannel_DDR3_read
+008191b8   hChannel_UPP
+0081919c   hChannel_img_rec
+008191ac   hChannel_mcbsp_rx
+008191a8   hChannel_mcbsp_tx
+008191a4   hChannel_uart_rec
+008191b0   hChannel_uart_send
+008191a0   hChannel_uart_trans
+00819194   hIntcEdma_manu
+00819190   hIntcEdma_uPP
+00819180   hIntcGpio
+00819188   hIntcGpio4
+00819184   hIntcGpio5
+0081918c   hIntcUpp
+008182b0   hIntc_IPC
+00819198   hModule_uPP
+008191d4   hParamBasicDDR3Read
+008191bc   hParamBasicImgRec
+008191cc   hParamBasicMcbspRx
+008191c8   hParamBasicMcbspTx
+008191d8   hParamBasicUPP
+008191c0   hParamBasicUartRec
+008191d0   hParamBasicUartSend
+008191c4   hParamBasicUartTrans
+008176d0   height
+008191dc   hnd_EDMA_uPP
+00818bbc   hnd_IPC
+00818bc0   hnd_UPP
+00818b60   hyperLinkRegs
+00818b64   i2cRegs
+00818790   iIPCARInfo
+008187a0   iIPCGRInfo
+0c010040   imageData_Dst
+0c014040   imageData_ResInput
+0c018040   imageData_ResOutput
+0c00c040   imageData_Src
+00818b90   imgCompleted
+00818770   intInfo
+00817e58   intcContext_uPP
+00818230   intcObj
+00818018   intcObjEdma_manu
+00818008   intcObjEdma_uPP
+00817fe0   intcObjGpio
+00817ff0   intcObjGpio4
+00817fe8   intcObjGpio5
+00817ff8   intcObjUpp
+00819178   intc_state_uPP
+00818bb0   interruptNumber
+0081924c   ipcgr_value
+0c030040   label_map
+0081922c   last_x_disp
+00819230   last_y_disp
+0c040070   left
+00804ce0   lock_mem_prot_regs
+00818bac   loseFrame
+0080eb80   lseek
+0080dc80   ltoa
+0080f300   main
+0080c620   malloc
+008187b0   mem_prot_key
+0080f360   memccpy
+0080ec20   memcpy
+0080dd60   memset
+008180fc   myParamSetupDDR3Read
+0081803c   myParamSetupImgRec
+008180bc   myParamSetupMcbspRx
+0081809c   myParamSetupMcbspTx
+0081811c   myParamSetupUPP
+0081807c   myParamSetupUartRec
+008180dc   myParamSetupUartSend
+0081805c   myParamSetupUartTrans
+0c040040   myTarget
+008176c0   pitching
+00819234   pitching_angle
+00803384   platform_delaycycles
+00818b54   pllc_regs
+0080de40   printf
+00818b58   pscRegs
+00820a50   qRel
+0c000000   rcvBuffer
+0080f020   readmsg
+00803424   registerInterruptIPC
+0080f0a0   remove
+0c01c040   restrain
+0c040090   right
+0c004040   sendBuffer
+00818ba4   sendCount
+0080ba40   setvbuf
+00818b5c   srioRegs
+00818b9a   suanfamode
+0c02c040   th_map
+00818b6c   timer0Regs
+00818b70   timer1Regs
+00818b74   timer2Regs
+00818b78   timer3Regs
+00818b7c   timer4Regs
+00818b80   timer5Regs
+00818b84   timer6Regs
+00818b88   timer7Regs
+00818b8c   timer8Regs
+0080f0a0   unlink
+00804da8   unlock_mem_prot_regs
+0c0400b0   up
+00818704   uppChanParams_DEFAULT
+00818724   uppDevParams_DEFAULT
+00818700   uppRegs
+008024d0   upp_check_buffer
+008004e8   upp_config
+008019e4   upp_dma_prog
+008020f0   upp_fill_buffer
+0080554c   upp_init
+00801e78   upp_int_clear
+00801c04   upp_int_disable
+00801ac8   upp_int_enable
+00801d40   upp_int_set
+00801fb4   upp_int_status
+00800454   upp_intc_setup
+00803670   upp_intc_setup_my
+00805918   upp_isr
+00800400   upp_key_config
+00800434   upp_pinmux_enable
+00805784   upp_start_transmit
+00818ba8   valid
+0081917c   vectId_uPP
+0080ee00   write
+0080f3c0   writemsg
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00007800   __TI_SYSMEM_SIZE
+00008000   __TI_STACK_SIZE
+00800400   upp_key_config
+00800434   upp_pinmux_enable
+00800454   upp_intc_setup
+008004e8   upp_config
+008019e4   upp_dma_prog
+00801ac8   upp_int_enable
+00801c04   upp_int_disable
+00801d40   upp_int_set
+00801e78   upp_int_clear
+00801fb4   upp_int_status
+008020f0   upp_fill_buffer
+008024d0   upp_check_buffer
+00803384   platform_delaycycles
+00803424   registerInterruptIPC
+00803670   upp_intc_setup_my
+00803794   IntcInit
+00803c24   EDMAInit
+008040a8   gpioInit
+00804124   gpioSetDirection
+00804160   gpioSetDataBusDirection
+008041e0   DDR3Init
+00804820   KeyStone_main_PLL_init
+00804b2c   KeyStone_DDR_PLL_init
+00804c80   KeyStone_PA_PLL_init
+00804ce0   lock_mem_prot_regs
+00804da8   unlock_mem_prot_regs
+00804e70   KeyStone_XM_cfg
+00804f30   KeyStone_L1_cfg
+00805028   KeyStone_L2_cfg
+00805204   edma_Init
+008053d8   Keystone_enable_PSC_module
+00805448   Keystone_disable_PSC_module
+008054a0   Keystone_disable_PSC_Power_Domain
+0080554c   upp_init
+00805784   upp_start_transmit
+00805918   upp_isr
+00805b40   deblurring_WIT_process
+00805fc0   ImgEDMARecCompleted_INT
+00805fe4   UartEDMASendUppcCompleted_INT
+00806004   UartEDMARecGyroCompleted_INT
+00806214   UartEDMARecUppcData_INT
+008063d8   DDR3EdmaReadCompleted_INT
+008063f8   HandleGPIO7RecImg_INT
+00806794   HandleGPIO5RecGyro_INT
+008067b0   HandleGPIO4RecUppc_INT
+008067e0   __c6xabi_divd
+00807360   CSL_edma3HwChannelControl
+00807e20   CSL_edma3HwControl
+00808300   _printfi
+00808760   CSL_intcHwControl
+00808b20   fputs
+00808fc0   IssueIPCInterrupt
+00809068   IPC_ISR
+00809184   IssueInterruptToNextCore
+00809820   CSL_edma3GetHwStatus
+0080a020   free
+0080a2a0   __c6xabi_divull
+0080ab80   CSL_intcOpen
+0080ada0   _CSL_intcEvent0Dispatcher
+0080afc0   _CSL_intcEvent1Dispatcher
+0080b1e0   _CSL_intcEvent2Dispatcher
+0080b400   _CSL_intcEvent3Dispatcher
+0080b620   fputc
+0080ba40   setvbuf
+0080bc40   _CSL_intcDispatcher
+0080bfe0   HOSTrename
+0080c180   __c6xabi_divul
+0080c4a0   eventEdmaHandler
+0080c5e8   EdmaEventHook
+0080c620   malloc
+0080c7a0   CSL_chipReadReg
+0080ca20   CSL_intcInit
+0080cb60   _CSL_intcIvpSet
+0080cb70   CSL_intcInterruptEnable
+0080cb90   CSL_intcInterruptDisable
+0080cbb0   CSL_intcInterruptClear
+0080cbc0   CSL_intcInterruptSet
+0080cbcc   CSL_intcInterruptRestore
+0080cbe4   CSL_intcQueryInterruptStatus
+0080cbf8   CSL_intcGlobalEnable
+0080cc18   CSL_intcGlobalDisable
+0080cc38   CSL_intcGlobalRestore
+0080cc50   CSL_intcGlobalNmiEnable
+0080cc64   CSL_intcGlobalExcepEnable
+0080cc78   CSL_intcGlobalExtExcepEnable
+0080cc8c   CSL_intcGlobalExcepClear
+0080cde0   _closefile
+0080d020   CSL_edma3ChannelOpen
+0080d140   fseek
+0080d260   HOSTlseek
+0080d360   _auto_init_elf
+0080d460   _wrt_ok
+0080d560   copy_in
+0080d660   HOSTopen
+0080d740   HOSTread
+0080d820   __c6xabi_divi
+0080d820   __divi
+0080d9e0   atoi
+0080dac0   close
+0080dba0   __TI_zero_init
+0080dc80   ltoa
+0080dd60   memset
+0080de40   printf
+0080df20   HOSTunlink
+0080dfe0   HOSTwrite
+0080e0a0   __c6xabi_divu
+0080e0a0   __divu
+0080e160   _doflush
+0080e220   CSL_edma3HwChannelSetupQue
+0080e2e0   CSL_edma3Open
+0080e3a0   CSL_intcPlugEventHandler
+0080e460   exit
+0080e520   __TI_tls_init
+0080e5e0   HOSTclose
+0080e680   _cleanup
+0080e860   _minit
+0080e9a0   CSL_edma3HwChannelSetupParam
+0080ea40   CSL_edma3ParamSetup
+0080eb80   lseek
+0080ec20   memcpy
+0080ee00   write
+0080eea0   __c6xabi_llshl
+0080ef20   _c_int00
+0080efa0   CSL_edma3GetParamHandle
+0080f020   readmsg
+0080f0a0   remove
+0080f0a0   unlink
+0080f120   __TI_cpp_init
+0080f180   __c6xabi_frcmpyd_div
+0080f1e0   __c6xabi_llshru
+0080f240   _subcull
+0080f2a0   CSL_edma3ccGetModuleBaseAddr
+0080f300   main
+0080f360   memccpy
+0080f3c0   writemsg
+0080f418   C$$IO$$
+0080f420   CSL_CPINTC_open
+0080f460   __c6xabi_isinf
+0080f4e0   __c6xabi_strasgi_64plus
+0080f4e0   __strasgi_64plus
+0080f520   _args_main
+0080f560   CSL_GPIO_open
+0080f580   __c6xabi_negll
+0080f5a0   _nop
+0080f600   C$$EXIT
+0080f600   abort
+0080f620   CSL_edma3Init
+0080f640   CSL_intcHookIsr
+0080f660   _CSL_intcNmiDummy
+0080f680   __TI_decompress_none
+0080f6a0   __TI_decompress_rle24
+0080f6c0   _stack
+008176c0   __TI_STACK_END
+008176c0   pitching
+008176c8   azimuth
+008176d0   height
+008176d4   dbglorudep_v
+008176e0   IPCGR1_value_b
+00817870   IPCAR1_value_b
+00817a00   IPCGR1_value_f
+00817b90   IPCAR1_value_f
+00817d20   ReceiveCore
+00817d88   InterruptCore
+00817df0   SetCore
+00817e58   intcContext_uPP
+00817ef0   EventHandler_uPP
+00817fe0   intcObjGpio
+00817fe8   intcObjGpio5
+00817ff0   intcObjGpio4
+00817ff8   intcObjUpp
+00818000   gpioHandler
+00818008   intcObjEdma_uPP
+00818010   EventRecord_uPP
+00818018   intcObjEdma_manu
+00818020   EventRecord_IPC
+00818028   edmaObj_uPP
+0081803c   myParamSetupImgRec
+0081805c   myParamSetupUartTrans
+0081807c   myParamSetupUartRec
+0081809c   myParamSetupMcbspTx
+008180bc   myParamSetupMcbspRx
+008180dc   myParamSetupUartSend
+008180fc   myParamSetupDDR3Read
+0081811c   myParamSetupUPP
+0081813c   ChObjImgRec
+00818158   ChObjUartTrans
+00818174   ChObjUartRec
+00818190   ChObjMcbspTx
+008181ac   ChObjMcbspRx
+008181c8   chobjUartSend
+008181e4   chobjDDR3Read
+00818200   chobjUPP
+00818220   glbCpintcHnd
+00818230   intcObj
+008182b0   hIntc_IPC
+008182b8   coreVector
+008182c0   _tmpnams
+00818408   _ftable
+00818700   uppRegs
+00818704   uppChanParams_DEFAULT
+00818724   uppDevParams_DEFAULT
+0081876c   _ft_end
+00818770   intInfo
+00818790   iIPCARInfo
+008187a0   iIPCGRInfo
+008187b0   mem_prot_key
+008187c0   _cleanup_ptr
+008187c4   _dtors_ptr
+008187c8   __TI_enable_exit_profile_output
+008187d8   _lock
+008187dc   _unlock
+008188f8   _ctypes_
+00818b40   XMC_regs
+00818b40   __TI_STATIC_BASE
+00818b44   CGEM_regs
+00818b48   boot_cfg_regs
+00818b4c   cpIntc0Regs
+00818b50   cpIntc1Regs
+00818b54   pllc_regs
+00818b58   pscRegs
+00818b5c   srioRegs
+00818b60   hyperLinkRegs
+00818b64   i2cRegs
+00818b68   gEDMACC2Regs
+00818b6c   timer0Regs
+00818b70   timer1Regs
+00818b74   timer2Regs
+00818b78   timer3Regs
+00818b7c   timer4Regs
+00818b80   timer5Regs
+00818b84   timer6Regs
+00818b88   timer7Regs
+00818b8c   timer8Regs
+00818b90   imgCompleted
+00818b94   UPUARTCompleted
+00818b98   algrithmCompleted
+00818b99   gycount
+00818b9a   suanfamode
+00818b9c   count
+00818ba0   RecFlag
+00818ba2   SendFlag
+00818ba4   sendCount
+00818ba8   valid
+00818baa   first_flag
+00818bac   loseFrame
+00818bb0   interruptNumber
+00818bb4   Set
+00818bbc   hnd_IPC
+00818bc0   hnd_UPP
+00818c00   _CSL_intcVectorTable
+00818f58   __CIOBUF_
+00819078   TccHandlerTable
+00819178   intc_state_uPP
+0081917c   vectId_uPP
+00819180   hIntcGpio
+00819184   hIntcGpio5
+00819188   hIntcGpio4
+0081918c   hIntcUpp
+00819190   hIntcEdma_uPP
+00819194   hIntcEdma_manu
+00819198   hModule_uPP
+0081919c   hChannel_img_rec
+008191a0   hChannel_uart_trans
+008191a4   hChannel_uart_rec
+008191a8   hChannel_mcbsp_tx
+008191ac   hChannel_mcbsp_rx
+008191b0   hChannel_uart_send
+008191b4   hChannel_DDR3_read
+008191b8   hChannel_UPP
+008191bc   hParamBasicImgRec
+008191c0   hParamBasicUartRec
+008191c4   hParamBasicUartTrans
+008191c8   hParamBasicMcbspTx
+008191cc   hParamBasicMcbspRx
+008191d0   hParamBasicUartSend
+008191d4   hParamBasicDDR3Read
+008191d8   hParamBasicUPP
+008191dc   hnd_EDMA_uPP
+008191e0   _CSL_intcCpuIntrTable
+00819224   _CSL_intcNumEvents
+00819228   _CSL_intcEventHandlerRecord
+0081922c   last_x_disp
+00819230   last_y_disp
+00819234   pitching_angle
+00819238   azimuth_angle
+0081923c   CheckSum
+0081923d   CheckSum1
+00819240   coreNum
+00819244   _CSL_intcAllocMask
+00819248   _CSL_intcEventOffsetMap
+0081924c   ipcgr_value
+00819250   _sys_memory
+00820a50   qRel
+00824a50   UART_SRC
+00824ad0   UART_DATA_IN_BYTE
+00824af0   UART_UP_DATA
+00824b80   UART_UP_DATA_IN_BYTE
+00824ba8   UART_UP_DATA_IN_BYTE_1
+00824bd0   UART_UP_DATA_IN_BYTE1
+00824bf8   UART_UP_DATA_IN_BYTE2
+00824c20   UART_UP_DATA_IN_BYTE3
+00824c48   UART_UP_DATA_IN_BYTE4
+00824c70   UART_UP_DATA_IN_BYTE5
+00824c98   DDR3_DATA1
+00824fb8   L2_memory
+008252d8   UART_DONE_DATA
+00825360   UART_DONE1_DATA
+008254d4   __TI_Handler_Table_Base
+008254e0   __TI_Handler_Table_Limit
+0082550c   __TI_CINIT_Base
+00825544   __TI_CINIT_Limit
+0c000000   rcvBuffer
+0c004040   sendBuffer
+0c00c040   imageData_Src
+0c010040   imageData_Dst
+0c014040   imageData_ResInput
+0c018040   imageData_ResOutput
+0c01c040   restrain
+0c02c040   th_map
+0c030040   label_map
+0c040040   myTarget
+0c040070   left
+0c040090   right
+0c0400b0   up
+0c0400d0   bottom
+ffffffff   __TI_pprof_out_hndl
+ffffffff   __TI_prof_data_size
+ffffffff   __TI_prof_data_start
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+UNDEFED    __TI_INITARRAY_Base
+UNDEFED    __TI_INITARRAY_Limit
+UNDEFED    __TI_TLS_INIT_Base
+UNDEFED    __TI_TLS_INIT_Limit
+
+[338 symbols]
