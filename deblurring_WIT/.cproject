@@ -59,18 +59,18 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.DISPLAY_ERROR_NUMBER.1149644002" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.LIBRARY.571116421" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.LIBRARY" valueType="libs">
 									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\sample&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\cmd&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\src&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\ti\pdk_C6657_1_1_2_6\packages\ti\csl\lib\ti.csl.ae66&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\ti\pdk_C6657_1_1_2_6\packages\ti\csl\lib\ti.csl.intc.ae66&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.SEARCH_PATH.873925808" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\sample&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\cmd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.XML_LINK_INFO.1944487009" name="Detailed link information data-base into &lt;file&gt; (--xml_link_info, -xml_link_info)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.XML_LINK_INFO" value="&quot;${ProjName}_linkInfo.xml&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.XML_LINK_INFO.1944487009" name="Detailed link information data-base into &lt;file&gt; (--xml_link_info, -xml_link_info)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.XML_LINK_INFO" value="" valueType="string"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C6000_7.3.exeLinker.inputType__CMD_SRCS.1966159780" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.exeLinker.inputType__CMD_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C6000_7.3.exeLinker.inputType__CMD2_SRCS.1627817406" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.exeLinker.inputType__CMD2_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C6000_7.3.exeLinker.inputType__GEN_CMDS.697918753" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.exeLinker.inputType__GEN_CMDS"/>

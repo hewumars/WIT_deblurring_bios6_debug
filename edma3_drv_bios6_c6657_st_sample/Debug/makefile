@@ -124,13 +124,13 @@ endif
 all: edma3_drv_bios6_c6657_st_sample.out
 
 dependents:
-	-cd F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug && $(MAKE) clean all
+	-cd F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug && $(MAKE) all
 
 # Tool invocations
-edma3_drv_bios6_c6657_st_sample.out: $(OBJS) $(GEN_CMDS) F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/linker.cmd
+edma3_drv_bios6_c6657_st_sample.out: $(OBJS) $(GEN_CMDS) F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/linker.cmd
 	@echo 'Building target: $@'
 	@echo 'Invoking: C6000 Linker'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 -g --diag_warning=225 --abi=eabi -z -m"edma3_drv_bios6_c6657_st_sample.map" --warn_sections -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" -i"C:/ti/edma3_lld_02_11_05_02/packages/ti/sdo/edma3/drv/lib/66/debug" -i"C:/ti/edma3_lld_02_11_05_02/packages/ti/sdo/edma3/drv/sample/lib/c6657-evm/66/debug" -i"C:/ti/edma3_lld_02_11_05_02/packages/ti/sdo/edma3/rm/lib/c6657-evm/66/debug" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --reread_libs --rom_model -l"F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/linker.cmd" -o "edma3_drv_bios6_c6657_st_sample.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 -g --diag_warning=225 --abi=eabi -z -m"edma3_drv_bios6_c6657_st_sample.map" --warn_sections -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" -i"C:/ti/edma3_lld_02_11_05_02/packages/ti/sdo/edma3/drv/lib/66/debug" -i"C:/ti/edma3_lld_02_11_05_02/packages/ti/sdo/edma3/drv/sample/lib/c6657-evm/66/debug" -i"C:/ti/edma3_lld_02_11_05_02/packages/ti/sdo/edma3/rm/lib/c6657-evm/66/debug" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --reread_libs --rom_model -l"F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/linker.cmd" -o "edma3_drv_bios6_c6657_st_sample.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -144,6 +144,6 @@ clean:
 
 .PHONY: all clean dependents
 .SECONDARY:
-F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/linker.cmd:
+F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/linker.cmd:
 
 -include ../makefile.targets

@@ -22,10 +22,6 @@ $(GEN_CMDS__FLAG) \
 "./src/IPC.obj" \
 "./src/EDMA_McBSP.obj" \
 -l"libc.a" \
--l"F:\myproject\git\loc_git\deblurring_WIT\include" \
--l"F:\myproject\git\loc_git\deblurring_WIT\sample" \
--l"F:\myproject\git\loc_git\deblurring_WIT\cmd" \
--l"F:\myproject\git\loc_git\deblurring_WIT\src" \
 -l"C:\ti\pdk_C6657_1_1_2_6\packages\ti\csl\lib\ti.csl.ae66" \
 -l"C:\ti\pdk_C6657_1_1_2_6\packages\ti\csl\lib\ti.csl.intc.ae66" \
 "../cmd/Base_6657.cmd" \
@@ -137,7 +133,7 @@ all: deblurring_WIT.out
 deblurring_WIT.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C6000 Linker'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 -g --display_error_number --diag_warning=225 --abi=eabi -z -m"deblurring_WIT.map" --warn_sections --display_error_number -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --reread_libs --xml_link_info="deblurring_WIT_linkInfo.xml" --rom_model -o "deblurring_WIT.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 -g --display_error_number --diag_warning=225 --abi=eabi -z -m"deblurring_WIT.map" --warn_sections --display_error_number -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/lib" -i"F:/myproject/git/loc_git/deblurring_WIT/sample" -i"F:/myproject/git/loc_git/deblurring_WIT/cmd" -i"F:/myproject/git/loc_git/deblurring_WIT/src" -i"F:/myproject/git/loc_git/deblurring_WIT/include" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --reread_libs --rom_model -o "deblurring_WIT.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
