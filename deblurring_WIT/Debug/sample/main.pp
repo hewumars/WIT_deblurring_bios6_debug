@@ -20,18 +20,18 @@ sample/main.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/src/intc/cslr_intc.h
 sample/main.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cacheAux.h
 sample/main.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cache.h
 sample/main.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cgem.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/cdib.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/../include/cdatatype.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/base_6657_include.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/IPC.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/cdib.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/../include/cdatatype.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/base_6657_include.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/IPC.h
 sample/main.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h
 sample/main.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/linkage.h
 sample/main.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
 sample/main.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h
 sample/main.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/upp_6657.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/evmc665x_gpio.h
-sample/main.obj: F:/myproject/deblurring_WIT/include/KeyStone_common.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/upp_6657.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/evmc665x_gpio.h
+sample/main.obj: F:/myproject/git/loc_git/deblurring_WIT/include/KeyStone_common.h
 sample/main.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h
 sample/main.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_xmc.h
 sample/main.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_bootcfg.h
@@ -68,18 +68,18 @@ C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/src/intc/cslr_intc.h:
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cacheAux.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cache.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cgem.h: 
-F:/myproject/deblurring_WIT/include/cdib.h: 
-F:/myproject/deblurring_WIT/include/../include/cdatatype.h: 
-F:/myproject/deblurring_WIT/include/base_6657_include.h: 
-F:/myproject/deblurring_WIT/include/IPC.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/cdib.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/../include/cdatatype.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/base_6657_include.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/IPC.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/linkage.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h: 
-F:/myproject/deblurring_WIT/include/upp_6657.h: 
-F:/myproject/deblurring_WIT/include/evmc665x_gpio.h: 
-F:/myproject/deblurring_WIT/include/KeyStone_common.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/upp_6657.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/evmc665x_gpio.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/KeyStone_common.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_xmc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_bootcfg.h: 

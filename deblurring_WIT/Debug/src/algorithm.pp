@@ -1,7 +1,7 @@
 # FIXED
 
 src/algorithm.obj: ../src/algorithm.c
-src/algorithm.obj: F:/myproject/deblurring_WIT/include/algorithm.h
+src/algorithm.obj: F:/myproject/git/loc_git/deblurring_WIT/include/algorithm.h
 src/algorithm.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/math.h
 src/algorithm.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/float.h
 src/algorithm.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/access.h
@@ -16,7 +16,7 @@ src/algorithm.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
 src/algorithm.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h
 
 ../src/algorithm.c: 
-F:/myproject/deblurring_WIT/include/algorithm.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/algorithm.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/math.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/float.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/access.h: 

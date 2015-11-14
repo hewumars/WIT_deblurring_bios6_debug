@@ -41,21 +41,21 @@ src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_bootcfg.h
 src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntc.h
 src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cpintc.h
 src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntcAux.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/EDMA3.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/EDMA3.h
 src/Init.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/edmaCommon.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/evmc665x_gpio.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/cdatatype.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/Intc_ISR.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/Interrupt.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/edmaCommon.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/evmc665x_gpio.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/cdatatype.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/Intc_ISR.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/Interrupt.h
 src/Init.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/IPC.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/IPC.h
 src/Init.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h
 src/Init.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
 src/Init.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/base_6657_include.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/upp_6657.h
-src/Init.obj: F:/myproject/deblurring_WIT/include/upp_common.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/base_6657_include.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/upp_6657.h
+src/Init.obj: F:/myproject/git/loc_git/deblurring_WIT/include/upp_common.h
 src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_psc.h
 src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_psc.h
 src/Init.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_upp.h
@@ -101,21 +101,21 @@ C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_bootcfg.h:
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cpintc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntcAux.h: 
-F:/myproject/deblurring_WIT/include/EDMA3.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/EDMA3.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h: 
-F:/myproject/deblurring_WIT/include/edmaCommon.h: 
-F:/myproject/deblurring_WIT/include/evmc665x_gpio.h: 
-F:/myproject/deblurring_WIT/include/cdatatype.h: 
-F:/myproject/deblurring_WIT/include/Intc_ISR.h: 
-F:/myproject/deblurring_WIT/include/Interrupt.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/edmaCommon.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/evmc665x_gpio.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/cdatatype.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/Intc_ISR.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/Interrupt.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h: 
-F:/myproject/deblurring_WIT/include/IPC.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/IPC.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h: 
-F:/myproject/deblurring_WIT/include/base_6657_include.h: 
-F:/myproject/deblurring_WIT/include/upp_6657.h: 
-F:/myproject/deblurring_WIT/include/upp_common.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/base_6657_include.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/upp_6657.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/upp_common.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_psc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_psc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_upp.h: 

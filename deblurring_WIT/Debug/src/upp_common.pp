@@ -1,7 +1,7 @@
 # FIXED
 
 src/upp_common.obj: ../src/upp_common.c
-src/upp_common.obj: F:/myproject/deblurring_WIT/include/upp_common.h
+src/upp_common.obj: F:/myproject/git/loc_git/deblurring_WIT/include/upp_common.h
 src/upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_bootcfg.h
 src/upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/soc.h
 src/upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr.h
@@ -21,7 +21,7 @@ src/upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cpintc.h
 src/upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntcAux.h
 
 ../src/upp_common.c: 
-F:/myproject/deblurring_WIT/include/upp_common.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/upp_common.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_bootcfg.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/soc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr.h: 

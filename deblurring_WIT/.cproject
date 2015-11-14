@@ -59,6 +59,10 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.DISPLAY_ERROR_NUMBER.1149644002" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.LIBRARY.571116421" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.3.linkerID.LIBRARY" valueType="libs">
 									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\sample&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\cmd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\myproject\git\loc_git\deblurring_WIT\src&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\ti\pdk_C6657_1_1_2_6\packages\ti\csl\lib\ti.csl.ae66&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\ti\pdk_C6657_1_1_2_6\packages\ti\csl\lib\ti.csl.intc.ae66&quot;"/>
 								</option>
@@ -149,7 +153,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="deblurring_WIT.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.381255377" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration"/>
 	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
 		<project-mappings>
 			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.asmSource" language="com.ti.ccstudio.core.TIASMLanguage"/>
@@ -161,4 +164,5 @@
 	</storageModule>
 	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="scannerConfiguration"/>
 </cproject>

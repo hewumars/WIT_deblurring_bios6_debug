@@ -17,7 +17,7 @@ src/KeyStone_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_bootcfg.h
 src/KeyStone_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_pscAux.h
 src/KeyStone_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_psc.h
 src/KeyStone_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_psc.h
-src/KeyStone_common.obj: F:/myproject/deblurring_WIT/include/KeyStone_common.h
+src/KeyStone_common.obj: F:/myproject/git/loc_git/deblurring_WIT/include/KeyStone_common.h
 src/KeyStone_common.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h
 src/KeyStone_common.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/vect.h
 src/KeyStone_common.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdint.h
@@ -49,7 +49,7 @@ C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_bootcfg.h:
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_pscAux.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_psc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_psc.h: 
-F:/myproject/deblurring_WIT/include/KeyStone_common.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/KeyStone_common.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/c6x.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/vect.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdint.h: 

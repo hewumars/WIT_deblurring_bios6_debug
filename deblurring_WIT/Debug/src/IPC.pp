@@ -5,7 +5,7 @@ src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
 src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/linkage.h
 src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h
 src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdlib.h
-src/IPC.obj: F:/myproject/deblurring_WIT/include/IPC.h
+src/IPC.obj: F:/myproject/git/loc_git/deblurring_WIT/include/IPC.h
 src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h
 src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdint.h
 src/IPC.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
@@ -32,7 +32,7 @@ C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h:
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/linkage.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdlib.h: 
-F:/myproject/deblurring_WIT/include/IPC.h: 
+F:/myproject/git/loc_git/deblurring_WIT/include/IPC.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/string.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdint.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h: 
