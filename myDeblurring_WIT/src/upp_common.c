@@ -3,9 +3,9 @@
 #include "upp_common.h"
 #include <ti\csl\cslr_bootcfg.h>
 
-#include <csl_intc.h>
-#include <csl_cpIntc.h>
-#include <csl_cpIntcAux.h>
+#include <ti\csl\src\intc\csl_intc.h>
+#include <ti\csl\csl_cpIntc.h>
+#include <ti\csl\csl_cpIntcAux.h>
 
 #define	INTERRUPT_MODE
 
@@ -45,17 +45,17 @@ void upp_key_config()
 {
 
 // BDK - Below code needs to be enabled. Below registers are global registers and explained in the data manual.
-	hBootCfg->KICK_REG0 = 0x83e70b13;  // Kick0 register + data(unlock)
+	hBootCfg->KICK_REG0 = 0x83e70b13;  // Kick0 register + data(unlock)//在tms320c6657.pdf中72页有寄存器介绍
 	hBootCfg->KICK_REG1 = 0x95a4f1e0;  // Kick1 register + data(unlock)
 
 	// Disable L1D cache
-	*(Uint32 *)(0x01840040) &= 0xFFFFFFF0;
+	*(Uint32 *)(0x01840040) &= 0xFFFFFFF0;//在C66x CorePac User Guide中91页有寄存器介绍
 }
 //#endif
 
 
 void upp_pinmux_enable(void){
-	Uint32 Chip_Pin_control_1 = 0x02620584;
+	Uint32 Chip_Pin_control_1 = 0x02620584;//在tms320c6657.pdf中86页有寄存器介绍
 * (volatile unsigned int *) Chip_Pin_control_1 = 0x00000001;
 }
 

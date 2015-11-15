@@ -5,8 +5,8 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <csl_cpIntc.h>
-#include <csl_cpIntcAux.h>
+#include <ti\csl\csl_cpIntc.h>
+#include <ti\csl\csl_cpIntcAux.h>
 #include "algorithm.h"
 //#define LoopBack
 
@@ -125,7 +125,7 @@ int upp_init()
 			printf("\n Error : Incorrect UPP ID read.");
 			goto upp_test_exit;
 	}
-    CSL_UPP_UPPCR_EN_TOKEN
+
     // toggle SW reset in PCR
 	CSL_FINST(uppRegs->UPPCR, UPP_UPPCR_EN, DISABLE);
 	// toggle SW reset in PCR
@@ -169,7 +169,7 @@ int upp_init()
 					upp_int_ERRQ | upp_int_UORQ | upp_int_DPEQ |
 					0 );
 
-	CSL_FINST(uppRegs->UPPCR, UPP_UPPCR_EN, ENABLE);
+	CSL_FINST(uppRegs->UPPCR, UPP_UPPCR_EN, ENABLE);//打开uPP外设
 		status = 0;
 	    upp_test_exit:
 	    	return status;
@@ -213,7 +213,7 @@ int upp_start_transmit(
 	}
 
 	// Enable uPP here. PCR.EN bit
-	CSL_FINST(uppRegs->UPPCR, UPP_UPPCR_EN, ENABLE);
+	CSL_FINST(uppRegs->UPPCR, UPP_UPPCR_EN, ENABLE);//上述配置完成后，打开uPP开始传输
 
 	status = 0;
 
@@ -305,13 +305,13 @@ int upp_isr()
 
 	hnd = CSL_CPINTC_open(0);
 
-	CSL_CPINTC_getRawInterruptStatus(hnd, 4, &rawStatus);
+	CSL_CPINTC_getRawInterruptStatus(hnd, 4, &rawStatus);//获取RAW_STATUS_REG[4]的状态
 
 
-	CSL_CPINTC_clearSysInterrupt(hnd,(CSL_CPINTCSystemInterrupt) rawStatus);
+	CSL_CPINTC_clearSysInterrupt(hnd,(CSL_CPINTCSystemInterrupt) rawStatus);//System Interrupt清零
 
 
-	*((volatile unsigned int *)(0x02600290)) = rawStatus;
+	*((volatile unsigned int *)(0x02600290)) = rawStatus;//System Interrupt Statu EN/CL Register 怎么确定寄存器地址的？
 
 	uppRegs->UPEOI = 0;
 	status = 0;

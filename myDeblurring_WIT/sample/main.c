@@ -1,10 +1,10 @@
 /*
  * main.c
  */
-#include <csl_types.h>
-#include <csl_edma3.h>
+#include <ti/csl/csl_types.h>
+#include <ti/csl/csl_edma3.h>
 #include <ti/csl/csl_chip.h>
-#include <csl_intc.h>
+#include <ti/csl/src/intc/csl_intc.h>
 #include <ti/csl/csl_cacheAux.h>
 #include "cdib.h"
 #include "base_6657_include.h"
@@ -13,11 +13,11 @@
 #include "evmc665x_gpio.h"
 #include "KeyStone_common.h"
 
-#include <csl_gpio.h>
-#include <csl_gpioAux.h>
-#include <cslr_gpio.h>
-#include <csl_cpIntc.h>
-#include <csl_cpIntcAux.h>
+#include <ti/csl/csl_gpio.h>
+#include <ti/csl/csl_gpioAux.h>
+#include <ti/csl/cslr_gpio.h>
+#include <ti/csl/csl_cpIntc.h>
+#include <ti/csl/csl_cpIntcAux.h>
 
 #define GPIOBANKNUM     (0)
 

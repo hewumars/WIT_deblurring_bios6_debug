@@ -1,14 +1,14 @@
 // upp_util.h
 
 //#include <device.h>
-#include <ti\csl\csl_bootcfg.h>
-#include <ti\csl\csl_psc.h>
+#include <ti/csl/csl_bootcfg.h>
+#include <ti/csl/csl_psc.h>
 //#include <ti\csl\src\intc\csl_intc.h>
-#include <ti\csl\cslr_upp.h>
-#include <ti\csl\cslr_device.h>
+#include <ti/csl/cslr_upp.h>
+#include <ti/csl/cslr_device.h>
 
-#include <csl_intc.h>
-#include <csl_intc.h>
+#include <ti/csl/src/intc/csl_intc.h>
+#include <ti/csl/src/intc/csl_intc.h>
 
 #if defined(__TMS470__)
 	#include "arm_int_index.h"

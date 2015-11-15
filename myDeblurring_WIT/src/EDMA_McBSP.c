@@ -12,7 +12,7 @@
 
 #include "McBSP.h"
 #include "preDefine.h"
-#include <csl_chip.h>
+#include <ti\csl\csl_chip.h>
 
 #define CSL_EDMA3                       (2)
 

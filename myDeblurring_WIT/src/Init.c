@@ -7,26 +7,26 @@
 
 #include <stdio.h>
 #include <math.h>
-#include <csl_types.h>
-#include <csl_edma3.h>
-#include <csl_intc.h>
-#include <soc.h>
-#include <csl_gpio.h>
-#include <csl_gpioAux.h>
-#include <cslr_gpio.h>
+#include <ti/csl/csl_types.h>
+#include <ti/csl/csl_edma3.h>
+#include <ti/csl/src/intc/csl_intc.h>
+#include <ti/csl/soc.h>
+#include <ti/csl/csl_gpio.h>
+#include <ti/csl/csl_gpioAux.h>
+#include <ti/csl/cslr_gpio.h>
 
-#include <cslr_device.h>
+#include <ti/csl/cslr_device.h>
 
-#include <csl_chipAux.h>
+#include <ti/csl/csl_chipAux.h>
 
-#include <csl_emif4f.h>
-#include <csl_emif4fAux.h>
+#include <ti/csl/csl_emif4f.h>
+#include <ti/csl/csl_emif4fAux.h>
 
-#include <csl_bootcfgAux.h>
+#include <ti/csl/csl_bootcfgAux.h>
 
 
-#include <csl_cpIntc.h>
-#include <csl_cpIntcAux.h>
+#include <ti/csl/csl_cpIntc.h>
+#include <ti/csl/csl_cpIntcAux.h>
 
 #include "EDMA3.h"
 #include "edmaCommon.h"
@@ -266,7 +266,7 @@ int32_t registerInterruptIPC()
 
     return 0;
 }
-
+//配置uPP的中断
 void upp_intc_setup_my(int (*isr)(void *))
 {
 	//初始化开始

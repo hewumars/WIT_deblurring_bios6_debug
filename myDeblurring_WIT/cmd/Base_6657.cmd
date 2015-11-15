@@ -31,4 +31,6 @@ SECTIONS
   "IMEM"		>	L2SRAM
   ".L2_buffers" >	MSMCSRAM
   "MSMC"		> 	MSMCSRAM
+  ".sysmem" > L2SRAM
+  "C1PL" > L2SRAM
 }

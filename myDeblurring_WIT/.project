@@ -24,4 +24,10 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>C6657_CSL_ROOT</name>
+			<value>file:/C:/ti/pdk_C6657_1_1_2_6/packages</value>
+		</variable>
+	</variableList>
 </projectDescription>

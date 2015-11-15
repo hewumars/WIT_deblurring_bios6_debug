@@ -4,12 +4,12 @@
  *  Created on: 2013-3-11
  *      Author: Administrator
  */
-#include <csl_edma3.h>
-#include <csl_intc.h>
-#include <soc.h>
-#include <cslr_device.h>
+#include <ti/csl/csl_edma3.h>
+#include <ti/csl/src/intc/csl_intc.h>
+#include <ti/csl/soc.h>
+#include <ti/csl/cslr_device.h>
 
-#include <csl_types.h>
+#include <ti/csl/csl_types.h>
 
 #include "cdib.h"
 #include "base_6657_include.h"

@@ -5,7 +5,7 @@
  *      Author: Administrator
  */
 
-#include <csl_chip.h>
+#include <ti/csl/csl_chip.h>
 
 #ifndef MCBSP_H_
 #define MCBSP_H_

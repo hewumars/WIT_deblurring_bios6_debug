@@ -5,10 +5,10 @@
  *      Author: Administrator
  */
 
-#include <csl_intc.h>
+#include <ti/csl/src/intc/csl_intc.h>
 
-#include <csl_cpIntc.h>
-#include <csl_cpIntcAux.h>
+#include <ti/csl/csl_cpIntc.h>
+#include <ti/csl/csl_cpIntcAux.h>
 
 #include <ti\csl\csl_edma3.h>
 #include "EDMA3.h"
