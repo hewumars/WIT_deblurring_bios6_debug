@@ -7,17 +7,16 @@
 #include <stdio.h>
 #include <ti\csl\csl_cpIntc.h>
 #include <ti\csl\csl_cpIntcAux.h>
-#include "algorithm.h"
+
 //#define LoopBack
 
 /* McBSP */
-#include "McBSP.h"
+
 #include "regs.h"
 #include "EDMA3.h"
-#include "base_6657.h"
-#include "Timer.h"
-#include "preDefine.h"
-#include <ti\csl\csl_edma3.h>
+
+
+
 
 #define receiveSize			16448
 #define sendSize		 	32768
@@ -27,15 +26,6 @@
 #define receivelineCnt		514
 #define sendlineCnt 		1024
 #define dataWidth			8
-
-#define MAX_TARGET			8
-
-#define	McBSP_TO_DSP2		0
-
-CSL_Edma3ChannelHandle   hChannel_McBSP0_trans;
-
-const unsigned char McBSPx_EDMA_Ch[2] = {37,39};
-const unsigned char McBSPr_EDMA_Ch[2] = {36,38};
 
 unsigned short	RecFlag = 0;
 unsigned short	SendFlag = 0;
@@ -76,29 +66,14 @@ unsigned char imageData_ResInput[imageSize];
 #pragma DATA_SECTION(imageData_ResOutput,".L2_buffers");
 unsigned char imageData_ResOutput[imageSize];
 
-#pragma DATA_SECTION(restrain,".L2_buffers");
-unsigned int restrain[imageSize];
-
 #pragma DATA_SECTION(th_map,".L2_buffers");
 unsigned char th_map[imageSize];
 
 #pragma DATA_SECTION(label_map,".L2_buffers");
 int label_map[imageSize];
 
-#pragma DATA_SECTION(myTarget,".L2_buffers");
-targetInfo myTarget[MAX_TARGET];
 
-#pragma DATA_SECTION(left,".L2_buffers");
-int left[MAX_TARGET];
 
-#pragma DATA_SECTION(right,".L2_buffers");
-int right[MAX_TARGET];
-
-#pragma DATA_SECTION(up,".L2_buffers");
-int up[MAX_TARGET];
-
-#pragma DATA_SECTION(bottom,".L2_buffers");
-int bottom[MAX_TARGET];
 
 /* Function definitions */
 static void LOCAL_delay(int cnt);
@@ -217,8 +192,8 @@ int upp_start_transmit(
 
 	status = 0;
 
-	upp_test_exit:
-		return status;
+
+	return status;
 }
 
 static void LOCAL_delay(int cnt)
@@ -316,8 +291,8 @@ int upp_isr()
 	uppRegs->UPEOI = 0;
 	status = 0;
 
-    upp_test_exit:
-		return status;
+
+	return status;
 } // end of function
 
 
@@ -329,11 +304,7 @@ void deblurring_WIT_process()
 	int	byte_receive_perline, byte_send_perline;
 
 //	DEFINATIONS OF VARIABLES
-	int i = 0, j = 0, p = 0, q = 0, c = 0, k = 0;
-	int ifFirstFrame = 1, targetCount = 0;
-	int local_sum = 0, local_max = 0;
-	int label_count = 0, th_level = 0;
-	unsigned char tempData = 0;
+	int  i=0;
 
 	byte_receive_perline = receiveSize / receivelineCnt;
 	byte_send_perline = sendSize / sendlineCnt;
@@ -371,7 +342,7 @@ void deblurring_WIT_process()
 			sendBuffer[i] = 0xff;
 
 /*
- * 		BEGIN ALGORITHM
+ * 		开始算法
  * 		imageData_Src is the input source data;
  * 		imageData_Dst is the output result data to display;
  */
@@ -382,47 +353,11 @@ void deblurring_WIT_process()
  * 		imageData_Dst is the EXIT
  */
 
-		int local_max = 0, local_sum = 0, current_co = 0, global_max = 0, global_min = 0xffff;
-		for(i = 1; i < ALGORITHM_IMAGE_HEIGHT - 1; ++i)
-		{
-			for(j = 1; j < ALGORITHM_IMAGE_WIDTH - 1; ++j)
-			{
-				local_sum = 0;
-				local_max = 0;
-				for(p = -1; p < 2; ++p)
-				{
-					for(q = -1; q < 2; ++q)
-					{
-						int currentValue = imageData_Src[(i + p) * ALGORITHM_IMAGE_WIDTH + (j + q)];
-						local_sum += currentValue;
-						if(currentValue > local_max)
-						{
-							local_max = currentValue;
-						}
-					}
-				}
-				current_co = i * ALGORITHM_IMAGE_WIDTH + j;
-				restrain[current_co] = imageData_Src[current_co] * (local_max - local_sum / 9);
-				if(restrain[current_co] > global_max)
-				{
-					global_max = restrain[current_co];
-				}
-				if(restrain[current_co] < global_min)
-				{
-					global_min = restrain[current_co];
-				}
-			}
-		}
-		for(i = 1; i < ALGORITHM_IMAGE_HEIGHT - 1; ++i)
-		{
-			for(j = 1; j < ALGORITHM_IMAGE_WIDTH - 1; ++j)
-			{
-				current_co = i * ALGORITHM_IMAGE_WIDTH + j;
-				//imageData_Dst[current_co] = (restrain[current_co] - global_min) * 255 / (global_max - global_min);
-				imageData_Dst[current_co] = restrain[current_co];
-			}
-		}
-//		END DEMO
+
+
+
+
+//		结束算法
 
 		for(i = 128; i < 16512; ++i)
 			sendBuffer[i] = imageData_Dst[i - 128];

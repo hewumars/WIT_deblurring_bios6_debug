@@ -1,8 +1,8 @@
 /*
  * upp_6657.h
  *
- *  Created on: 2013-6-5
- *      Author: Administrator
+ *  Created on: 2015-11-15
+ *  Author: HeWu
  */
 
 #ifndef UPP_6657_H_
@@ -11,7 +11,6 @@
 static void LOCAL_delay(int cnt);
 
 int upp_init();
-
 
 void deblurring_WIT_process();
 

@@ -30,9 +30,10 @@ typedef void (*EdmaTccHandler)(void);
 
 /* Funtion which registers individual event handlers in a table */
 void EdmaEventHook(Uint16 ,EdmaTccHandler);
-
+void EDMA_isr();
 /* Forward declaration */
 void eventEdmaHandler();
+void eventEdmaHandler (void *handle);
 void eventGlobalEdmaHandler();
 
 #ifdef __cplusplus
