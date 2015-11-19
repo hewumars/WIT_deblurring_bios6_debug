@@ -2735,7 +2735,7 @@ __FAR__ const xdc_SizeT ti_sysbios_knl_Task_Module_State_terminatedQ__O = offset
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_pe66");
+xdc__META(__ASM__, "@(#)__ASM__ = F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_pe66");
 
 /*
  *  ======== __ISA__ ========

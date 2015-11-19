@@ -18,7 +18,6 @@
  */
 
 #include <ti/csl/csl_edma3.h>
-#include "base_6657.h"
 #include "edmacommon.h"
 
 /* Global Edma Tcc handler table */

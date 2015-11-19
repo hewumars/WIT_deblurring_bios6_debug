@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/edma3_drv_bios6_c6657_st_sample_pe66.c"/>
     </sources>
     <configscripts>
-        <srcFile name="F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"/>
+        <srcFile name="F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -43,7 +43,7 @@
         isPartial="false"
         xCfgScript="package/cfg/edma3_drv_bios6_c6657_st_sample_pe66.cfg"
         xCfgPrefix="package/cfg/edma3_drv_bios6_c6657_st_sample_pe66"
-        cfgScript="F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"
+        cfgScript="F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -55,7 +55,7 @@
         profile="debug"
         xCfgScript="package/cfg/edma3_drv_bios6_c6657_st_sample_pe66.cfg"
         xCfgPrefix="package/cfg/edma3_drv_bios6_c6657_st_sample_pe66"
-        cfgScript="F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"
+        cfgScript="F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"
         cfgArgs="null"
         />
     </executables>

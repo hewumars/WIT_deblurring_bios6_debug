@@ -1,0 +1,1 @@
+"./sample/main.obj" "./src/upp_common.obj" "./src/edmaIntDispatcher.obj" "./src/KeyStone_common.obj" "./src/Intc_ISR.obj" "./src/Intc.obj" "./src/Init.obj" "./src/Implement_WIT.obj" -l"libc.a" -l"ti.csl.intc.ae66" -l"ti.csl.ae66" "../cmd/Base_6657.cmd" 

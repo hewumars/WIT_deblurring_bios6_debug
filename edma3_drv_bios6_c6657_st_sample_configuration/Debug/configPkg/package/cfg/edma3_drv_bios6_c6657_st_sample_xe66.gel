@@ -1,13 +1,13 @@
 XDC_open() {
-    GEL_ProjectLoad("F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt");
-    GEL_ProjectLoad("F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_xe66.pjt");
-    GEL_ProjectSetActive("F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_xe66.pjt");
+    GEL_ProjectLoad("F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt");
+    GEL_ProjectLoad("F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_xe66.pjt");
+    GEL_ProjectSetActive("F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_xe66.pjt");
 }
 XDC_close() {
-    GEL_ProjectClose("F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt");
-    GEL_ProjectClose("F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_xe66.pjt");
+    GEL_ProjectClose("F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt");
+    GEL_ProjectClose("F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/cfg/edma3_drv_bios6_c6657_st_sample_xe66.pjt");
 }
 menuitem "XDC Package"
-hotmenu load_executable () { GEL_Load("F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/edma3_drv_bios6_c6657_st_sample.xe66"); }
+hotmenu load_executable () { GEL_Load("F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/edma3_drv_bios6_c6657_st_sample.xe66"); }
 hotmenu open_project () { XDC_open(); }
 hotmenu close_project () { XDC_close(); }

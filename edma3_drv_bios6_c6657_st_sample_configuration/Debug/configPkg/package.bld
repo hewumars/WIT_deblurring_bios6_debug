@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg',
+        cfgScript: 'F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg',
         profile: 'debug',
         cfgHome: 'configPkg',
 });
@@ -48,7 +48,7 @@ else {
 
 var thisObj = {
     cfg:        '../edma3_drv_bios6_c6657_st_sample.cfg',
-    outputPath: 'F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg',
+    outputPath: 'F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg',
     exeName:    'edma3_drv_bios6_c6657_st_sample' + suffix,
     exeIntName: 'edma3_drv_bios6_c6657_st_sample' + suffix.replace('.', '_'),
     targ:       targ,

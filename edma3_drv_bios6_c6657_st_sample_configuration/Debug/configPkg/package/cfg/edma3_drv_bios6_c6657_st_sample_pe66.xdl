@@ -9,7 +9,7 @@
  */
 
 
--l"F:\myproject\edma3_drv_bios6_c6657_st_sample_configuration\Debug\configPkg\package\cfg\edma3_drv_bios6_c6657_st_sample_pe66.oe66"
+-l"F:\myproject\git\loc_git\edma3_drv_bios6_c6657_st_sample_configuration\Debug\configPkg\package\cfg\edma3_drv_bios6_c6657_st_sample_pe66.oe66"
 -l"C:\ti\bios_6_33_06_50\packages\ti\sysbios\lib\instrumented_e66\sysbios\sysbios.lib"
 -l"C:\ti\xdctools_3_23_04_60\packages\ti\targets\rts6000\lib\ti.targets.rts6000.ae66"
 -l"C:\ti\xdctools_3_23_04_60\packages\ti\targets\rts6000\lib\boot.ae66"

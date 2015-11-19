@@ -8,9 +8,9 @@ Tool="CustomBuilder"
 Config="Executable"
 
 [Project Dependencies]
-Source="F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt"
+Source="F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt"
 
-["F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt" Settings]
+["F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/Debug/configPkg/package/configPkg.pjt" Settings]
 ExcludeFromBuild=true
 
 
@@ -20,7 +20,7 @@ ExcludeFromBuild=true
 ;  directories.
 ;
 ["Compiler" Settings: "Executable"]
-Options=-i"C:/ti/bios_6_33_06_50/packages" -i"C:/ti/edma3_lld_02_11_05_02/packages" -i"C:/ti/ccsv5/ccs_base" -i"C:/ti/xdais_7_24_00_04/packages" -i"C:/ti/xdais_7_24_00_04/examples" -i"C:/ti/xdctools_3_23_04_60/packages" -i"F:\myproject\edma3_drv_bios6_c6657_st_sample_configuration\Debug" 
+Options=-i"C:/ti/bios_6_33_06_50/packages" -i"C:/ti/edma3_lld_02_11_05_02/packages" -i"C:/ti/ccsv5/ccs_base" -i"C:/ti/xdais_7_24_00_04/packages" -i"C:/ti/xdais_7_24_00_04/examples" -i"C:/ti/xdctools_3_23_04_60/packages" -i"F:\myproject\git\loc_git\edma3_drv_bios6_c6657_st_sample_configuration\Debug" 
 
 [External Makefile]
 ExtMakefile=../../package.bld
@@ -32,7 +32,7 @@ ExtMakefile=../../package.bld
 [Source Files]
 Source="../../package.bld"
 Source="edma3_drv_bios6_c6657_st_sample_xe66.c"
-Source="../../F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"
+Source="../../F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg"
 
 ["../../package.bld" Settings: "Executable"]
 UseCustomBuild=true
@@ -66,5 +66,5 @@ Run=Always
 ["edma3_drv_bios6_c6657_st_sample_xe66.c" Settings: "Executable"]
 ExcludeFromBuild=true
 
-["../../F:/myproject/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg" Settings: "Executable"]
+["../../F:/myproject/git/loc_git/edma3_drv_bios6_c6657_st_sample_configuration/edma3_drv_bios6_c6657_st_sample.cfg" Settings: "Executable"]
 ExcludeFromBuild=true
