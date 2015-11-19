@@ -1,0 +1,1 @@
+-l"./configPkg/linker.cmd" "./sample/main.obj" "./upp_common.obj" "./edmaIntDispatcher.obj" "./KeyStone_common.obj" "./Intc_ISR.obj" "./Intc.obj" "./Init.obj" "./Implement_WIT.obj" -l"libc.a" -ledma3_lld_drv_sample.ae66 -ledma3_lld_rm.ae66 -ledma3_lld_drv.ae66 -l"ti.csl.intc.ae66" -l"ti.csl.ae66" 
