@@ -7,6 +7,8 @@
 #include "upp_6657.h"
 #include "KeyStone_common.h"
 #include "EDMA3_LLD_Init.h"
+#include <xdc/runtime/Types.h>
+#include <xdc/runtime/Timestamp.h>
 #define GPIOBANKNUM     (0)
 
 #define ROW      128								//!origin image's height
@@ -29,13 +31,19 @@ Void taskFxn(UArg a0, UArg a1)
 	IntcInit();
 	//wh_edma3_lld_init(128u, 128u, 1u,EDMA3_DRV_SYNC_A);
 	echo();
-	deblurring_WIT_process();
+
+	//deblurring_WIT_process();
     Task_sleep(10);
 
     System_printf("exit taskFxn()\n");
 }
 void main(void)
 {
+    Types_FreqHz freq;
+    Uint32 start;
+    Timestamp_getFreq(&freq);
+    start = Timestamp_get32();
+    printf("Timestamp0 is %d \n\t",start);
 	    Task_Handle task;
 	    Task_Params taskParams;
 	    Error_Block eb;
@@ -45,7 +53,7 @@ void main(void)
 		System_printf("enter main()\n");
 	    Error_init(&eb);
 
-		//KeyStone_main_PLL_init (10, 1);
+		KeyStone_main_PLL_init (10, 1);
 
 		if(coreNum == 0){
 		    task = Task_create(taskFxn, NULL, &eb);
@@ -55,7 +63,7 @@ void main(void)
 		        BIOS_exit(0);
 		    }
 		}
-
+		printf("Timestamp1 is %f us\n\t", ((double)(Timestamp_get32() - start)/(double)freq.lo)*1000);
 
 
 	    BIOS_start();     /* enable interrupts and start SYS/BIOS */

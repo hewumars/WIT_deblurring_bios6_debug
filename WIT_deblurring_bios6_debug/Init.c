@@ -599,13 +599,13 @@ EDMA3_DRV_Result wh_edma3_lld_init(
     	}
     //设置tcc和chId
     tcc = EDMA3_DRV_TCC_ANY;
-    //chId = EDMA3_DRV_HW_CHANNEL_EVENT_6;//对应CSL_EDMA3_CHA_GPINT0
+    //chId = EDMA3_DRV_HW_CHANNEL_EVENT_6;//对应CSL_EDMA3_CHA_GPINT0,报EDMA3_DRV_E_DMA_CHANNEL_UNAVAIL错误
     chId = EDMA3_DRV_DMA_CHANNEL_ANY;
 
     if(result == EDMA3_DRV_SOK)
     {
     	result = EDMA3_DRV_requestChannel(hEdma, &chId, &tcc, (EDMA3_RM_EventQueue)0, &callback1,NULL);
-    }//这一步无效参数错误。
+    }
 
     if(result == EDMA3_DRV_SOK)
     {
@@ -654,6 +654,7 @@ EDMA3_DRV_Result wh_edma3_lld_init(
     	result = EDMA3_DRV_setPaRAM(hEdma, chId, &paramSet);
         printf("paramSet.opt is %d \n\t", paramSet.opt);
     }
+    EDMA3_DRV_enableTransfer(hEdma,  chId, EDMA3_DRV_TRIG_MODE_EVENT);//事件触发
     return result;
 }
 

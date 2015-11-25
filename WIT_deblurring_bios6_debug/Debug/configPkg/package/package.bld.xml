@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/app_pe66.c"/>
     </sources>
     <configscripts>
-        <srcFile name="F:/myproject/WIT_deblurring_bios6_debug/app.cfg"/>
+        <srcFile name="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/app.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/app_pe66.cfg"
         xCfgPrefix="package/cfg/app_pe66"
-        cfgScript="F:/myproject/WIT_deblurring_bios6_debug/app.cfg"
+        cfgScript="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/app.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/app_pe66.cfg"
         xCfgPrefix="package/cfg/app_pe66"
-        cfgScript="F:/myproject/WIT_deblurring_bios6_debug/app.cfg"
+        cfgScript="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/app.cfg"
         cfgArgs="null"
         />
     </executables>

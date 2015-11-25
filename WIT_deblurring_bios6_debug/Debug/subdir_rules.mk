@@ -6,35 +6,35 @@
 Implement_WIT.obj: ../Implement_WIT.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Implement_WIT.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Implement_WIT.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 Init.obj: ../Init.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Init.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Init.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 Intc.obj: ../Intc.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Intc.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Intc.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 Intc_ISR.obj: ../Intc_ISR.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Intc_ISR.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="Intc_ISR.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 KeyStone_common.obj: ../KeyStone_common.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="KeyStone_common.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="KeyStone_common.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -51,14 +51,14 @@ configPkg/: configPkg/compiler.opt
 edmaIntDispatcher.obj: ../edmaIntDispatcher.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="edmaIntDispatcher.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="edmaIntDispatcher.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 upp_common.obj: ../upp_common.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/WIT_deblurring_bios6_debug/src" --include_path="F:/myproject/WIT_deblurring_bios6_debug/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="upp_common.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.12/bin/cl6x" -mv6600 --abi=eabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/cmd" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/sample" --include_path="F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/src" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="upp_common.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

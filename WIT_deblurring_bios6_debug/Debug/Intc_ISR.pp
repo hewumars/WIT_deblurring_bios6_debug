@@ -17,7 +17,7 @@ Intc_ISR.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/soc.h
 Intc_ISR.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr.h
 Intc_ISR.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_device.h
 Intc_ISR.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_tpcc.h
-Intc_ISR.obj: F:/myproject/WIT_deblurring_bios6_debug/include/cdatatype.h
+Intc_ISR.obj: F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/cdatatype.h
 
 ../Intc_ISR.c: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_edma3.h: 
@@ -36,4 +36,4 @@ C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/soc.h:
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_device.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_tpcc.h: 
-F:/myproject/WIT_deblurring_bios6_debug/include/cdatatype.h: 
+F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/cdatatype.h: 

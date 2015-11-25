@@ -1,7 +1,7 @@
 # FIXED
 
 upp_common.obj: ../upp_common.c
-upp_common.obj: F:/myproject/WIT_deblurring_bios6_debug/include/upp_common.h
+upp_common.obj: F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/upp_common.h
 upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_bootcfg.h
 upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/soc.h
 upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr.h
@@ -28,7 +28,7 @@ upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cpintc.h
 upp_common.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntcAux.h
 
 ../upp_common.c: 
-F:/myproject/WIT_deblurring_bios6_debug/include/upp_common.h: 
+F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/upp_common.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_bootcfg.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/soc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr.h: 

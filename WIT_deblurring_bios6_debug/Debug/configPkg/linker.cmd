@@ -9,8 +9,8 @@
  */
 
 
--l"F:\myproject\WIT_deblurring_bios6_debug\Debug\configPkg\package\cfg\app_pe66.oe66"
--l"F:\myproject\WIT_deblurring_bios6_debug\src\sysbios\sysbios.lib"
+-l"F:\myproject\git\loc_git\WIT_deblurring_bios6_debug\Debug\configPkg\package\cfg\app_pe66.oe66"
+-l"F:\myproject\git\loc_git\WIT_deblurring_bios6_debug\src\sysbios\sysbios.lib"
 -l"C:\ti\xdctools_3_25_04_88\packages\ti\targets\rts6000\lib\ti.targets.rts6000.ae66"
 -l"C:\ti\xdctools_3_25_04_88\packages\ti\targets\rts6000\lib\boot.ae66"
 

@@ -20,12 +20,12 @@ Intc.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_device.h
 Intc.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntc.h
 Intc.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cpintc.h
 Intc.obj: C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntcAux.h
-Intc.obj: F:/myproject/WIT_deblurring_bios6_debug/include/EDMA3.h
+Intc.obj: F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/EDMA3.h
 Intc.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h
 Intc.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/linkage.h
 Intc.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h
-Intc.obj: F:/myproject/WIT_deblurring_bios6_debug/include/edmacommon.h
-Intc.obj: F:/myproject/WIT_deblurring_bios6_debug/include/regs.h
+Intc.obj: F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/edmacommon.h
+Intc.obj: F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/regs.h
 
 ../Intc.c: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/src/intc/csl_intc.h: 
@@ -47,9 +47,9 @@ C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_device.h:
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/cslr_cpintc.h: 
 C:/ti/pdk_C6657_1_1_2_6/packages/ti/csl/csl_cpIntcAux.h: 
-F:/myproject/WIT_deblurring_bios6_debug/include/EDMA3.h: 
+F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/EDMA3.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdio.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/linkage.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.12/include/stdarg.h: 
-F:/myproject/WIT_deblurring_bios6_debug/include/edmacommon.h: 
-F:/myproject/WIT_deblurring_bios6_debug/include/regs.h: 
+F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/edmacommon.h: 
+F:/myproject/git/loc_git/WIT_deblurring_bios6_debug/include/regs.h: 
